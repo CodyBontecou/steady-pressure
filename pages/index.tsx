@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Modal from '../components/Modal'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -119,11 +120,12 @@ const Home: NextPage = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row w-1/3">
-              <Link href="/about">
+              <Modal />
+              {/* <Link href="/about">
                 <a className="flex items-center text-center justify-center bg-white border border-gray-700 rounded-md py-3 px-8 font-medium text-gray-700 hover:bg-gray-700 hover:text-white">
                   Email
                 </a>
-              </Link>
+              </Link> */}
 
               <a
                 href="tel:808-217-6036"

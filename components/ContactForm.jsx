@@ -1,7 +1,17 @@
+const preventDefault = f => e => {
+  e.preventDefault()
+  f(e)
+}
+
 export default function ContactForm() {
   return (
     <div className="mt-5 md:mt-0 md:col-span-2">
-      <form name="contact" action="" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        onSubmit={preventDefault}
+        method="POST"
+        data-netlify="true"
+      >
         <input type="hidden" name="form-name" value="contact" />
 
         <div className="shadow sm:rounded-md sm:overflow-hidden">

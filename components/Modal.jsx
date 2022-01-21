@@ -1,6 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import ContactForm from '../components/ContactForm'
+import SuccessModal from './SuccessModal'
 
 export default function MyModal() {
   let [isOpen, setIsOpen] = useState(false)
@@ -14,6 +15,13 @@ export default function MyModal() {
     setIsOpen(true)
   }
 
+  useEffect(() => {
+    if (window.location.search.includes('success=true')) {
+      setIsSuccess(true)
+    }
+    console.log(isSuccess)
+  }, [])
+
   return (
     <>
       <div className="flex items-center text-center justify-center">
@@ -25,6 +33,8 @@ export default function MyModal() {
           Contact
         </button>
       </div>
+
+      {isSuccess && <SuccessModal />}
 
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog
@@ -68,9 +78,7 @@ export default function MyModal() {
                 >
                   Contact us
                 </Dialog.Title>
-                <div className="mt-2">
-                  <ContactForm />
-                </div>
+                <div className="mt-2">{!isSuccess && <ContactForm />}</div>
               </div>
             </Transition.Child>
           </div>

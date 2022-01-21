@@ -1,7 +1,7 @@
 export default function ContactForm() {
   return (
     <div className="mt-5 md:mt-0 md:col-span-2">
-      <form name="contact" action="/success" method="POST" data-netlify="true">
+      <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
 
         <div className="shadow sm:rounded-md sm:overflow-hidden">

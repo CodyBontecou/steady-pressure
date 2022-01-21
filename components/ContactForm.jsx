@@ -1,8 +1,3 @@
-function handleSubmit(e) {
-  e.preventDefault()
-  console.log('You clicked submit.')
-}
-
 export default function ContactForm() {
   return (
     <div className="mt-5 md:mt-0 md:col-span-2">
@@ -12,7 +7,6 @@ export default function ContactForm() {
         method="POST"
         action="/?success=true"
         data-netlify="true"
-        onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
 

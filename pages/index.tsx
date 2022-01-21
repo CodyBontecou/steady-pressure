@@ -121,11 +121,6 @@ const Home: NextPage = () => {
 
             <div className="flex flex-col sm:flex-row w-1/3">
               <Modal />
-              {/* <Link href="/about">
-                <a className="flex items-center text-center justify-center bg-white border border-gray-700 rounded-md py-3 px-8 font-medium text-gray-700 hover:bg-gray-700 hover:text-white">
-                  Email
-                </a>
-              </Link> */}
 
               <a
                 href="tel:808-217-6036"

@@ -16,11 +16,11 @@ export default function MyModal() {
 
   return (
     <>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center text-center justify-center">
         <button
           type="button"
           onClick={openModal}
-          className="flex items-center text-center justify-center bg-white border border-gray-700 rounded-md py-3 px-8 font-medium text-gray-700 hover:bg-gray-700 hover:text-white"
+          className="w-full bg-white border border-gray-700 rounded-md py-3 px-8 font-medium text-gray-700 hover:bg-gray-700 hover:text-white"
         >
           Contact
         </button>

@@ -3,7 +3,7 @@ export default function ContactForm() {
     <div className="mt-5 md:mt-0 md:col-span-2">
       <form
         name="contact"
-        action="/#success"
+        action="#success"
         method="POST"
         netlify
         data-netlify="true"

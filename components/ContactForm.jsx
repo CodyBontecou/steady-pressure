@@ -7,6 +7,7 @@ export default function ContactForm() {
   return (
     <div className="mt-5 md:mt-0 md:col-span-2">
       <form
+        id="form"
         name="contact"
         method="POST"
         action="/?success=true"

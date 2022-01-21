@@ -2,51 +2,59 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <div className="h-screen relative bg-white overflow-x-hidden lg:overflow-hidden">
+      <Link href="/">
+        <a className="absolute top-4 left-4 z-50">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-10 w-10 text-gray-500 hover:text-gray-900 cursor-pointer"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M11 17l-5-5m0 0l5-5m-5 5h12"
+            />
+          </svg>
+        </a>
+      </Link>
       <div className="pt-2 sm:pt-10">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
           <div className="sm:max-w-lg">
-            <div className="w-24 sm:w-28">
+            <div className="w-full flex justify-center lg:justify-start">
               <img
-                className=""
-                src="/images/logo.png"
-                alt="Steady Pressure HI logo"
+                className="rounded-full w-80 h-80"
+                src="/images/on-the-boat.png"
+                alt="Hoku in his natural habitat"
               />
             </div>
-            <h1 className="mt-4 sm:mt-8 text-6xl font font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-              Steady Pressure
+            <h1 className="mt-8 text-6xl font font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+              Who we are
             </h1>
             <h2 className="mt-2 text-4xl font font-medium tracking-tight text-gray-500 sm:text-2xl">
-              Home Detail and Pressure Washing
+              A group of people specialized in outdoor home detailing and
+              pressure washing.
             </h2>
-            {/* <p className="mt-2 text-xl text-gray-500">
-              Email or direct message for all your home or commercial detailing
-              needs!
-            </p> */}
-            <ul className="mt-4 text-2xl text-gray-900">
-              <li className="mt-1">Exterior</li>
-              <li className="mt-1">Pathways</li>
-              <li className="mt-1">Driveways</li>
-              <li className="mt-1">Tile</li>
-              <li className="mt-1">Poolsides</li>
-              <li className="mt-1">Miscellaneous</li>
-            </ul>
-            {/* <div className="flex justify-between w-1/3 fixed bottom-10">
-              <ul className="text-gray-500">
-                <li>Sean &quot;Hoku&quot; Hudman</li>
-                <li>Kailua-Kona, HI.</li>
-                <li className="w-4 h-4">
-                  <a href="https://www.instagram.com/steadypressurehd/">
-                    <img
-                      src="https://cdn-icons-png.flaticon.com/512/87/87390.png"
-                      alt="Instagram Logo"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div> */}
+            <h2 className="mt-2 text-xl font font-normal text-gray-500">
+              Email or call for all your home or commercial detailing needs!
+            </h2>
+            <div className="mt-2 w-4 h-4">
+              <a
+                href="https://www.instagram.com/steadypressurehd/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/87/87390.png"
+                  alt="Instagram Logo"
+                />
+              </a>
+            </div>
           </div>
           <div className="mt-10">
             {/* Decorative image grid */}
@@ -57,7 +65,7 @@ const Home: NextPage = () => {
               <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                 <div className="flex items-center space-x-6 lg:space-x-8">
                   <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                    <div className="w-44 h-64 rounded-lg overflow-hidden lg:opacity-100">
+                    <div className="w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100">
                       {/* Left */}
                       <img
                         src="/images/after1.png"
@@ -139,4 +147,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default About

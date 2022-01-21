@@ -3,7 +3,7 @@ import { Fragment, useState } from 'react'
 import ContactForm from '../components/ContactForm'
 
 export default function MyModal() {
-  let [isOpen, setIsOpen] = useState(true)
+  let [isOpen, setIsOpen] = useState(false)
   let [isSuccess, setIsSuccess] = useState(false)
 
   function closeModal() {

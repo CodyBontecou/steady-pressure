@@ -1,6 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import ContactForm from '../components/ContactForm'
+import Link from 'next/link'
 
 export default function SuccessModal() {
   let [isOpen, setIsOpen] = useState(true)
@@ -64,13 +65,15 @@ export default function SuccessModal() {
               </div>
 
               <div className="mt-4">
-                <button
-                  type="button"
-                  className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-                  onClick={closeModal}
-                >
-                  Got it, thanks!
-                </button>
+                <Link href="/">
+                  <button
+                    type="button"
+                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    onClick={closeModal}
+                  >
+                    Got it, thanks!
+                  </button>
+                </Link>
               </div>
             </div>
           </Transition.Child>

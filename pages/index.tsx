@@ -120,14 +120,14 @@ const Home: NextPage = () => {
 
             <div className="flex flex-col sm:flex-row w-1/3">
               <Link href="/about">
-                <a className="flex items-center text-center justify-center bg-white border border-gray-700 border-transparent rounded-md py-3 px-8 font-medium text-gray-700 hover:bg-gray-700 hover:text-white">
+                <a className="flex items-center text-center justify-center bg-white border border-gray-700 rounded-md py-3 px-8 font-medium text-gray-700 hover:bg-gray-700 hover:text-white">
                   Email
                 </a>
               </Link>
 
               <a
                 href="tel:808-217-6036"
-                className="mt-2 sm:mt-0 sm:ml-4 flex items-center text-center justify-center bg-gray-700 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-white hover:text-gray-700 hover:border-gray-700"
+                className="mt-2 sm:mt-0 sm:ml-4 flex items-center text-center justify-center bg-gray-700 border rounded-md py-3 px-8 font-medium text-white hover:bg-white hover:text-gray-700 hover:border-gray-700"
               >
                 Call
               </a>
